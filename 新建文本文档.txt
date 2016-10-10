@@ -1,0 +1,94 @@
+列出display的值，说明他们的作用。position的值，
+1.   
+  block 象块类型元素一样显示。
+  none 缺省值。象行内元素类型一样显示。
+  inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。
+  list-item 象块类型元素一样显示，并添加样式列表标记。
+  flex 弹性布局
+
+  2. 
+  *absolute 
+        生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。 
+
+  *fixed （老IE不支持）
+        生成绝对定位的元素，相对于浏览器窗口进行定位。 
+
+  *relative 
+        生成相对定位的元素，相对于其正常位置进行定位。 
+
+  * static  默认值。没有定位，元素出现在正常的流中
+  *（忽略 top, bottom, left, right z-index 声明）。
+
+  * inherit 规定从父元素继承 position 属性的值。
+
+CSS3有哪些新特性？
+
+CSS3实现圆角（border-radius:8px），阴影（box-shadow:10px），
+  对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）
+  transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜
+  增加了更多的CSS选择器  多背景 rgba 
+
+Css3中最新添加哪四种颜色属性方法
+1.HSLA 2.HSL 3.RGBa 4.Opacity
+
+Html5中新增了哪些常用的标签？
+
+<section>定义文章中的区段 
+<article>定义文章 
+<aside>侧边栏 
+<header>定义页眉 
+<main>主要的
+<hgroup>定义对网页标题的组合 
+<figure>一组媒体对象以及文字 
+<nav>导航 
+<figcaption>定义gigure的标题 
+<footer>定义页脚
+
+Html中最新的Input Type类型有哪些？
+
+color，number，search，tel，url，range，time，date，datetime
+
+圆角怎么表示，分别写出上左、上右、下左、下
+
+border-radius
+border-radius:10px 0 0 0;上左
+border-radius: 0 10px 0 0;上右
+border-radius:0 0 0 10px;下左
+order-radius:0 0 10px 0;下右
+
+如何设定一个Div对象在其父Div对象中的位置为（
+
+margin:5px 15px;
+
+当文字超过对象区域时，如何使其自动显示“…
+
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+
+Div[Foo],Div[Foo=”Bar”],Div[Foo*=”Bar”]这三个CSS选择
+
+Div有foo属性，div的属性foo的值为bar,div的属性foo的值里有bar
+
+CSS中使用列布局是什么？
+
+为了实现列布局我们需要指定以下内容
+ 
+我们需要把text划分为多少列
+指定列数我们需要使用column-count，对于Chrome和firefox分别需要”webkit”和“moz-column”
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
+column-count:3;
+两列之间我们想要多少差距
+
+-moz-column-gap:40px; /* Firefox */
+-webkit-column-gap:40px; /* Safari and Chrome */
+column-gap:20px;
+你想在这些列之间画一条线么？如果是，那么多厚呢？
+
+-moz-column-rule:4px outset #ff00ff; /* Firefox */
+-webkit-column-rule:4px outset #ff00ff; /* Safari and Chrome */
+column-rule:6px outset #ff00ff;
+以下是完整代码
+
+
